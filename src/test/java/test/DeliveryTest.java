@@ -21,16 +21,6 @@ class DeliveryTest {
     void setup() {
         open("http://localhost:9999");
     }
-    @BeforeAll
-    static void setUpAll() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
-    }
-
-    @AfterAll
-    static void tearDownAll() {
-        SelenideLogger.removeListener("allure");
-    }
-
 
 
     @Test
